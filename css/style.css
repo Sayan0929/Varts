@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+}
+
+/* header starts here */
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 60px;
+    position: relative;
+}
+
+/* nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a {
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover{
+    background: #ed1c22;
+    color: white;
+} */
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 80px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo span {
+    color: white;
+    background-color: #ed1c22;
+}
+
+nav {
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 15px;
+    line-height: 80px;
+}
+
+nav ul li a {
+    position: relative;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #ed1c22;
+    transform-origin: right;
+    transition: width 0.5s ease;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+label #btn,
+label #cancel{
+    color: black;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.hero {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.img-cont img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* .img-cont {
+    background-image: url("img/slideimage1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+
+.descr p {
+    font-weight: 200;
+}
+
+.descr p:first-child {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.descr p:nth-child(2) {
+    font-size: 20px;
+}
+
+.descr button {
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: 1px solid black;
+    background-color: #fcee21;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* header ends here */
+
+/* Our Products starts here */
+
+section {
+    padding: 30px 60px;
+    background-color: white;
+}
+
+section .head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.head p {
+    color: gray;
+}
+
+.box-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 10px;
+}
+
+.box {
+    min-width: 250px;
+    padding: 10px;
+    border: 2px solid #cac2c2;
+    box-shadow: 10px 10px 5px #bdb2b2;
+}
+
+.box:hover {
+    border: 2px solid #00a8ff;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.colors button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+/* Our Products ends here */
+
+/* About Us starts here */
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.content ul li {
+    line-height: 2em;
+}
+
+/* About Us ends here */
+
+/* Contact Us ends here */
+
+.info {
+    max-width: 500px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info ul li {
+    line-height: 2em;
+}
+
+.info span {
+    font-weight: 200;
+}
+/* Contact Us ends here */
+
+/* Footer Starts here */
+
+footer {
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.social a span {
+    font-size: 23px;
+    margin-right: 10px;
+    transition: transform 0.4s ease;
+}
+
+.social a span:hover {
+    transform: scale(1.4);
+}
+
+.copy {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* Footer Ends here */
+
+@media only screen and (max-width:1100px){
+    .box-cont {
+        grid-template-columns: repeat(2,50%);
+        margin: 0 auto;
+    }
+
+    .box {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:900px){
+    label #btn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        left: -100%;
+        z-index: 99;
+        background-color: white;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:700px){
+    header {
+        padding: 30px 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .box-cont {
+        grid-template-columns: repeat(1,100%);
+        margin: 0 auto;
+    }
+
+    .box {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 20px
+    }
+
+
+
+}
+
+
+
+

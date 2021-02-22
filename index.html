@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promotion Pay</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="ho">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-times" id="cancel"></i>
+            </label>
+            <a href="#" class="logo">Promotion <span>Pay$</span></a>
+            <ul>
+                <li><a href="#ho" class="bhaag">Home</a></li>
+                <li><a href="#op" class="bhaag">Our Products</a></li>
+                <li><a href="#au" class="bhaag">About Us</a></li>
+                <li><a href="#cu" class="bhaag">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="img-cont">
+                <img src="img/slideimage1.jpg" alt="">
+            </div>
+
+            <div class="descr">
+                <p>7Days Return Policy Without Any Extra Cost.</p>
+                <p>50% OFF Shipping For 3 Days!!</p>
+
+                <button>shop now</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="op">
+        <div class="head">
+            <h1>Our Products</h1>
+            <p>These products are our current best sellers <br> We think you'll like them too.</p>
+        </div>
+
+        <div class="box-cont">
+            <div class="box">
+                <div class="img">
+                    <img src="img/speaker.jpg" alt="">
+                </div>
+
+                <div class="product">
+                    <p>JBL Ful Bass Speaker 2-In-1</p>
+                </div>
+
+                <div class="prices">
+                    <p>$200.99 Only</p>
+                </div>
+
+                <div class="sizes">
+                    <p>5 Pieces Left</p>
+                </div>
+
+                <div class="colors">
+                    <p>Only This Color Is Available</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/black.jpg" alt="" class="change">
+                </div>
+
+                <div class="product">
+                    <p>Stormtech Men's Vortex HD 3-In-1</p>
+                </div>
+
+                <div class="prices">
+                    <p>$100.99 Only</p>
+                </div>
+
+                <div class="sizes">
+                    <p>Available Sizes: S - 3XL</p>
+                </div>
+
+                <div class="colors">
+                    <button class="black"></button>
+                    <button class="red"></button>
+                    <button class="blue"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/powerbank.jpg" alt="">
+                </div>
+
+                <div class="product">
+                    <p>Xaomi 20000Mah Powebank</p>
+                </div>
+
+                <div class="prices">
+                    <p>$150.99 Only</p>
+                </div>
+
+                <div class="sizes">
+                    <p>3 Pieces Left</p>
+                </div>
+
+                <div class="colors">
+                    <p>Only This Color Is Available</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="img/mug.jpg" alt="">
+                </div>
+
+                <div class="product">
+                    <p>Samsung Colorful Mug</p>
+                </div>
+
+                <div class="prices">
+                    <p>$15.99 Only</p>
+                </div>
+
+                <div class="sizes">
+                    <p>2 Pieces Left</p>
+                </div>
+
+                <div class="colors">
+                    <p>Only This Color Is Available</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="au">
+        <div class="head">
+            <h1>About Us</h1>
+            <p>Why Choose Promotion Pays?</p>
+        </div>
+        <div class="content">
+            <h3>Your #1 Choice for Custom Apparel including Screen Printing, Embroidery, Promotional Items.</h3>
+            <ul>
+                <li>We can customize your logo.</li>
+                <li>Fast turn around time once artwork approved.</li>
+                <li>We have 12 years experience to serve you better.</li>
+                <li>If you find a better price elsewhere not only we will match it, we will beat it guarantee.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cu">
+        <div class="head">
+            <h1>Contact Us</h1>
+            <p>Just Do It!</p>
+        </div>
+
+        <div class="info">
+            <ul>
+                <li>Customer Service: <span>info@promotionpay.com</span></li>
+                <li>Sales: <span>sales@promotionpay.com</span></li>
+                <li>Art Department: <span>artwork@promotionpay.com</span></li>
+                <li>By Phone: <span>(Operating Hours: 9am-5pm)</span></li>
+                <li>Sales: <span>1888-503-3526</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><span class="fa fa-instagram"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-facebook"></span></a>
+        </div>
+
+        <div class="copy">
+            <p>&copy; 2015 Promotion Pay$ all right reserved.</p>
+        </div>
+    </footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(document).ready(function(){
+        $('.black').click(function(){
+            $('.change').attr('src','img/black.jpg');
+        });
+
+        $('.red').click(function(){
+            $('.change').attr('src','img/red.jpg');
+        });
+
+        $('.blue').click(function(){
+            $('.change').attr('src','img/blue.jpg');
+        });
+      });
+  </script>
+</body>
+</html>
