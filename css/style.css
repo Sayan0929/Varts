@@ -209,8 +209,15 @@ section .head {
     border: 2px solid #00a8ff;
 }
 
+.box .img {
+    max-width: 250px;
+    max-height: 290px;
+    display: grid;
+    place-items: center;
+}
+
 .img img {
-    width: 100%;
+    width: 75%;
     height: auto;
     object-fit: contain;
 }
@@ -234,6 +241,58 @@ section .head {
 
 .red {
     background-color: red;
+}
+
+.blackhat {
+    background-color: black;
+}
+
+.redhat {
+    background-color: red;
+}
+
+.bluehat {
+    background-color: blue;
+}
+
+.whitehat {
+    background-color: white;
+}
+
+.skinhat {
+    background-color: rgb(248, 193, 141);
+}
+
+.blackbeanie {
+    background-color: black;
+}
+
+.yellowbeanie {
+    background-color: yellow;
+}
+
+.orangebeanie {
+    background-color: orange;
+}
+
+.redbeanie {
+    background-color: red;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.military {
+    background-color: #4c4c3e;
+}
+
+.violet {
+    background-color: #83294b;
+}
+
+.green {
+    background-color: #65654b;
 }
 /* Our Products ends here */
 
